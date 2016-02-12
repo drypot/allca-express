@@ -1,0 +1,16 @@
+{
+  "name": "allca",
+  "version": "1.0.0",
+  "homepage": "https://github.com/drypot/allca",
+  "authors": [
+    "drypot <drypot@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
