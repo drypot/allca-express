@@ -1,0 +1,41 @@
+extends ../layout/layout
+
+block head-title
+  title #{appName}
+
+block site-title
+
+block content
+
+  script.
+    $(function() {
+      //ccategory.initList();
+    });
+
+  .section.page-title
+    h1
+      a(href='/') #{appName}
+
+  //-
+    if first // first 인자 나중에 추가해야
+      .section
+        .sub-section.top-links
+          if locals.user
+              a(href='/images/new') Upload
+              a(href='/users/' + user._id) Profile
+              a(href='/users') Users
+              a(href='#' onclick='javascript:cuser.logout(); return false;') Logout
+          else
+              a(href='/users/login') Login
+              a(href='/users/register') Register
+
+        .sub-section.news
+          for banner in banners
+            a(href=banner.url, target="_blank") #{banner.text}
+            br
+
+  .section.category-list
+    | Hello!
+    br
+    br
+    | I'm growing!

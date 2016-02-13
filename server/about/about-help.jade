@@ -1,0 +1,24 @@
+extends ../layout/layout
+
+block head-title
+  title Help - #{appName}
+
+block content
+
+  .section.page-title
+    h1 Help
+
+  .section
+    .sub-section
+      | facebook:&nbsp;
+      a(href='https://www.facebook.com/allca.news', target='_blank') https://www.facebook.com/allca.news
+      br
+
+      | email:&nbsp;
+      -var email = 'support+' + appNamel + '@raysoda.com'
+      a(href='mailto:' + email)= email
+      br
+
+    .sub-section
+      span Want to deactivate your account?&nbsp;
+      a(href='/users/deactivate') click

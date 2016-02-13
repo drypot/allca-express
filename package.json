@@ -12,6 +12,7 @@
     "express-session": "^1.13.0",
     "jade": "^1.11.0",
     "minimist": "^1.2.0",
+    "mongodb": "^2.1.7",
     "multiparty": "^4.1.2",
     "nodemailer": "^2.1.0",
     "superagent": "^1.7.2"

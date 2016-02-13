@@ -1,0 +1,28 @@
+extends ../layout/layout
+
+block head-title
+  title Deactivate My Account - #{appName}
+
+block content
+  script.
+    $(function () {
+      cuser.initDeactivate();
+    });
+
+  .section.page-title
+    h1 Deactivate My Account
+
+  .section
+    .sub-section
+      | YOU CAN NOT LOGIN AGAIN.
+      br
+    .sub-section
+      | 계정사용중지 신청 페이지입니다.
+      br
+      | 계정이 중지되면 더이상 로그인하실 수 없습니다.
+      br
+      | 같은 이름으로 타인이 재가입하는 것을 막기 위해 회원구분정보는 유지됩니다.
+
+    .sub-section
+      button#dea-btn.btn.btn-danger Deactivate My Account
+      button#dea-confirm-btn.btn.btn-danger.hide Yes, Deactivate

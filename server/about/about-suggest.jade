@@ -1,0 +1,28 @@
+extends ../layout/layout
+
+block head-title
+  title Help - #{appName}
+
+block content
+
+  .section.page-title
+    h1 Suggest
+
+  .section
+    .sub-section
+      | 링크 추가 요청이나 제안하실 내용은
+      br
+      | 아래 페이스북 페이지 방문자 게시물이나 메시지,
+      br
+      | 이메일로 보내주십시오.
+      br
+
+    .sub-section
+      | facebook:&nbsp;
+      a(href='https://www.facebook.com/allca.news', target='_blank') https://www.facebook.com/allca.news
+      br
+
+      | email:&nbsp;
+      -var email = 'support+' + appNamel + '@raysoda.com'
+      a(href='mailto:' + email)= email
+      br

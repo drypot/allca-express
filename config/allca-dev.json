@@ -1,0 +1,17 @@
+{
+  "appName": "AllCa",
+  "appNamel": "allca",
+  "appDesc": "All Categories About Bicycle",
+  
+  "mainSite": "http://allca.localhost:8080",
+
+  "appPort": 8070,
+  "cookieSecret": "o;iejf832ndvs",
+  
+  "uploadSite": "http://file.allca.localhost:8080",
+  "uploadDir": "upload/allca",
+
+  "mongodb": "allca",
+
+  "mailServer": ""
+}
