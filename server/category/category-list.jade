@@ -3,7 +3,7 @@ extends ../layout/layout
 block head-title
   title #{appName}
 
-block site-title
+block page-header
 
 block content
 
@@ -12,30 +12,154 @@ block content
       //ccategory.initList();
     });
 
-  .section.page-title
+  .page-title
     h1
       a(href='/') #{appName}
 
   //-
-    if first // first 인자 나중에 추가해야
-      .section
-        .sub-section.top-links
-          if locals.user
-              a(href='/images/new') Upload
-              a(href='/users/' + user._id) Profile
-              a(href='/users') Users
-              a(href='#' onclick='javascript:cuser.logout(); return false;') Logout
-          else
-              a(href='/users/login') Login
-              a(href='/users/register') Register
+    .section
+      .sub-section.news
+        for banner in banners
+          a(href=banner.url, target="_blank") #{banner.text}
+          br
 
-        .sub-section.news
-          for banner in banners
-            a(href=banner.url, target="_blank") #{banner.text}
-            br
+  .section
+    div 자전거에 관한 모든 카테고리
+    div(style='text-decoration: line-through') 는 그냥 희망 사항
 
-  .section.category-list
-    | Hello!
-    br
-    br
-    | I'm growing!
+  .category-list
+
+    .group
+      .name 자전거
+      ul
+        li: a(href='categories/bike-pro') 로드/산악
+        //-li: a(href='categories/bike-mini') 미니벨로
+        li 미니벨로
+        //-li: a(href='categories/bike-touring') 투어링
+        li 투어링
+        //-li: a(href='categories/bike-city') 생활차
+        li 생활차
+
+    .group
+      .name 필수 용품
+      ul
+        //-li: a(href='categories/helmet') 헬멧
+        li  헬멧
+        //-li: a(href='categories/gloves') 장갑
+        li 장갑
+
+    .group
+      .name 용품
+      ul
+        //-li: a(href='categories/goggles') 고글
+        li 고글
+        li: a(href='categories/clothing') 의류
+        //-li: a(href='categories/shoes') 신발/페달
+        li 신발/페달
+
+    .group
+      .name 필수 부품
+      ul
+        //-li: a(href='categories/light') 라이트
+        li  라이트
+        //-li: a(href='categories/cage') 물통 케이지
+        li 물통 케이지
+        //-li: a(href='categories/bottle') 물통
+        li 물통
+        //-li: a(href='categories/saddle-bag') 안장 가방
+        li 안장 가방
+        //-li: a(href='categories/tube') 튜브
+        li 튜브
+
+    .group
+      .name 부품
+      ul
+        //-li: a(href='categories/saddle') 안장
+        li 안장
+        //-li: a(href='categories/wheel') 휠
+        li 휠
+        //-li: a(href='categories/drive-train') 구동계
+        li 구동계
+        //-li: a(href='categories/brake') 브레이크
+        li 브레이크
+        //-li: a(href='categories/handlebar') 핸들바
+        li 핸들바
+        //-li: a(href='categories/gps') 가민
+        li 가민
+
+    .group
+      .name 필수 도구
+      ul
+        //-li: a(href='categories/multi-tool') 멀티툴
+        li 멀티툴
+        //-li: a(href='categories/chain-oil') 체인 오일
+        li 체인 오일
+        //-li: a(href='categories/pump') 펌프
+        li 펌프
+
+    .group
+      .name 도구
+      ul
+        li ...
+
+    .group
+      .name 커뮤니티
+      ul
+        //-li: a(href='categories/cafe-road') 로드
+        li 로드
+        //-li: a(href='categories/cafe-mtd') 산악
+        li 산악
+        //-li: a(href='categories/cafe-touring') 투어링
+        li 투어링
+
+    .group
+      .name 블로그
+      ul
+        //-li: a(href='categories/blog-road') 로드
+        li 로드
+        //-li: a(href='categories/blog-mtb') 산악
+        li 산악
+        //-li: a(href='categories/blog-touring') 투어링
+        li 투어링
+        //-li: a(href='categories/blog-fitting') 자세
+        li 자세
+        //-li: a(href='categories/blog-mechanic') 정비
+        li 정비
+
+    .group
+      .name 코스
+      ul
+        //-li: a(href='categories/course-road') 로드
+        li 로드
+        //-li: a(href='categories/course-mtb') 산악
+        li 산악
+
+    .group
+      .name 행사
+      ul
+        //-li: a(href='categories/event-road') 로드
+        li 로드
+        //-li: a(href='categories/event-mtb') 산악
+        li 산악
+        //-li: a(href='categories/event-randonneurs') 란도너스
+        li 란도너스
+
+    .group
+      .name 식당
+      ul
+        //-li: a(href='categories/restaurant-seoul') 서울/경기
+        li 서울/경기
+
+    .group
+      .name 카페
+      ul
+        //-li: a(href='categories/cafe-seoul') 서울/경기
+        li 서울/경기
+
+  .section
+    a(href='https://www.facebook.com/allca.news', target='_blank')
+      span.fa.fa-facebook-square.fa-2x
+
+  .section 
+    | 업데이트: 2016.02.21
+

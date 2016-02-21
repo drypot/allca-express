@@ -28,3 +28,7 @@ function list(req, res, api, done) {
     });
   }
 }
+
+expb.core.get('/categories/:name([0-9a-z\-]+)', function (req, res, done) {
+  res.render('category-pages/' + req.params.name);
+});
