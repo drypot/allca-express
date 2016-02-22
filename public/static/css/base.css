@@ -57,6 +57,9 @@ pre.clean {
 hr {
   margin: 0px; }
 
+.line-thru {
+  text-decoration: line-through; }
+
 .error-report {
   text-align: left;
   font-family: monospace;
@@ -149,12 +152,6 @@ pre.sample {
   @media (min-width: 768px) {
     .category-list {
       margin: 5.1em auto; } }
-  .category-list .group .name {
-    display: inline-block;
-    margin: 0em 0.3em;
-    font-weight: bold; }
-  .category-list .group .name::after {
-    content: ":"; }
   .category-list .group ul {
     display: inline-block;
     padding: 0em; }
@@ -162,6 +159,10 @@ pre.sample {
       display: inline;
       word-break: keep-all;
       margin: 0em 0.3em; }
+    .category-list .group ul li.name {
+      font-weight: bold; }
+    .category-list .group ul li.name::after {
+      content: ":"; }
 
 .category-detail {
   max-width: 640px;

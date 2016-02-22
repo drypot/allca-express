@@ -1,0 +1,27 @@
+extends ../layout/layout
+
+block head-title
+  title 스트라바 - #{appName}
+
+block content
+
+    .page-title
+      h1 스트라바
+
+    .category-detail
+
+      .sub-category
+        .name 위치 기록 서비스
+        ul
+          li 스트라바
+            a(href='https://www.strava.com', target='_blank') https://www.strava.com
+          li 엔도몬도
+            a(href='https://www.endomondo.com', target='_blank') https://www.endomondo.com
+
+      .sub-category
+        .name 보조 서비스
+        ul
+          li tapiriik, 동기화
+            a(href='https://tapiriik.com', target='_blank') https://tapiriik.com
+          li VeloViewer
+            a(href='http://veloviewer.com', target='_blank') http://veloviewer.com
