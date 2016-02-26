@@ -1,0 +1,36 @@
+extends ../layout/layout
+
+block head-title
+  title 엠티비 - #{appName}
+
+block content
+
+  .page-title
+    h1 엠티비
+
+  .category-detail
+
+    .subc
+      .name 커뮤니티
+      ul
+        li: a(href='http://cafe.naver.com/bikecity', target='_blank') 자출사
+        li: a(href='http://cafe.naver.com/daekwangh', target='_blank') 자행사
+        li: a(href='http://cafe.naver.com/sanmarubike', target='_blank') 산마루 자전거풍경
+        li: a(href='http://cafe.naver.com/mtbhouse', target='_blank') 권영학 MTB ACADEMY 
+
+    .subc
+      .name 블로그
+      ul
+        li: a(href='http://blog.naver.com/byo5641', target='_blank') 벙그리, 인내 그리고 기다림
+
+    .subc
+      .name 해외 잡지
+      ul
+        li: a(href='http://www.mtb-news.de', target='_blank') MTB-NEWS
+
+    .subc
+      .name 산악 전문 몰
+      ul
+        li: a(href='http://www.imtmall.co.kr', target='_blank') http://www.imtmall.co.kr
+
+  include _mall.jade

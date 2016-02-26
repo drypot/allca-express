@@ -24,11 +24,11 @@ function list(req, res, api, done) {
     res.json({
     });
   } else {
-    res.render('category/category-list', {
+    res.render('category/category-list.jade', {
     });
   }
 }
 
 expb.core.get('/categories/:name([0-9a-z\-]+)', function (req, res, done) {
-  res.render('category-pages/' + req.params.name);
+  res.render('category-pages/' + req.params.name + '.jade');
 });

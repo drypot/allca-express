@@ -57,9 +57,6 @@ pre.clean {
 hr {
   margin: 0px; }
 
-.line-thru {
-  text-decoration: line-through; }
-
 .error-report {
   text-align: left;
   font-family: monospace;
@@ -152,16 +149,15 @@ pre.sample {
   @media (min-width: 768px) {
     .category-list {
       margin: 5.1em auto; } }
-  .category-list .group ul {
-    display: inline-block;
+  .category-list ul {
     padding: 0em; }
-    .category-list .group ul li {
+    .category-list ul li {
       display: inline;
       word-break: keep-all;
       margin: 0em 0.3em; }
-    .category-list .group ul li.name {
+    .category-list ul li.name {
       font-weight: bold; }
-    .category-list .group ul li.name::after {
+    .category-list ul li.name::after {
       content: ":"; }
 
 .category-detail {
@@ -179,16 +175,27 @@ pre.sample {
   @media (min-width: 768px) {
     .category-detail {
       margin: 5.1em auto; } }
-  .category-detail .sub-category {
-    margin: 1.7em 0em; }
-    .category-detail .sub-category .name {
+  .category-detail .subc {
+    margin: 3em auto; }
+    @media (min-width: 768px) {
+      .category-detail .subc {
+        margin: 3.3em auto; } }
+    @media (min-width: 1024px) {
+      .category-detail .subc {
+        margin: 3.6em auto; } }
+    @media (min-width: 1400px) {
+      .category-detail .subc {
+        margin: 3.9em auto; } }
+    .category-detail .subc .name {
+      font-size: 1.3em;
       font-weight: bold;
-      margin-bottom: 0.1em; }
-    .category-detail .sub-category ul {
+      margin-bottom: 1em; }
+    .category-detail .subc ul {
+      margin-bottom: 1.5em;
       padding: 0em;
       list-style: none; }
-      .category-detail .sub-category ul a {
-        padding-left: 0.5em; }
+      .category-detail .subc ul li {
+        margin-bottom: 0.3em; }
 
 #profile-text {
   white-space: pre-line; }

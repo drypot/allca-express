@@ -49,7 +49,7 @@ expb.redirectToLogin = function (err, req, res, done) {
 };
 
 expb.core.get('/users/login', function (req, res, done) {
-  res.render('user/user-auth-login');
+  res.render('user/user-auth-login.jade');
 });
 
 expb.core.post('/api/users/login', function (req, res, done) {

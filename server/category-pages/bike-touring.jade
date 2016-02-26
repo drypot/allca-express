@@ -1,43 +1,64 @@
 extends ../layout/layout
 
 block head-title
-  title 여행 자전거 - #{appName}
+  title 투어링 - #{appName}
 
 block content
 
-    .page-title
-      h1 여행 자전거
+  .page-title
+    h1 투어링
 
-    .category-detail
+  .category-detail
+    .subc
+      .name 커뮤니티
+      ul
+        li: a(href='http://cafe.naver.com/biketravelers', target='_blank') 자여사
+        li: a(href='http://cafe.naver.com/surlybike', target='_blank') Surly로 떠나는 자전거 여행
+        li: a(href='http://cafe.naver.com/tourdeworld', target='_blank') 뚜르 드 월드
+        li: a(href='http://cafe.naver.com/velotourschool', target='_blank') 노마드자전거여행학교
 
-      .sub-category
-        .name 
-        ul
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
+    .subc
+      .name 국내 여행 블로그
+      ul
+        li: a(href='http://blog.naver.com/mountaintour', target='_blank') 터벅이의 아웃도어 스토리
+        li: a(href='http://blog.naver.com/looker78', target='_blank') 김군's 독거총각의 일탈~
+        li: a(href='http://blog.naver.com/han_jae1009', target='_blank') 바람의 아들, 내 가슴을 뛰게 하는 일을 하자
+        li: a(href='http://blog.naver.com/skyblue2311', target='_blank') 해리님의 블로그
 
-      .sub-category
-        .name 
-        ul
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
-          li 
-            a(href='', target='_blank') 
+    .subc
+      .name 해외 여행 블로그
+      ul
+        li: a(href='http://www.universewithme.com', target='_blank') 우주 여행자의 자전거 세계 여행
+        li: a(href='http://bikingpark.blog.me', target='_blank') 노마드, 박주하, Biking Nomad
+        li: a(href='http://parkjouha.blog.me', target='_blank') 노마드, 박주하, Biking Bohemian
+        li: a(href='http://blog.naver.com/dpsystem', target='_blank') 김기사,박대리의 자전거 세계여행
+        li: a(href='http://blog.naver.com/akwgood', target='_blank') 테리의 자전거여행
+
+    .subc
+      .name 잡지
+      ul
+        li: a(href='http://bunyanvelo.com', target='_blank') BUNYAN VELO
+    
+    .subc
+      .name 구매 가이드
+      ul
+        li: a(href='http://blog.naver.com/akiliner/220380387184', target='_blank') 칫솔, 투어링 자전거, 2015
+        li: a(href='http://blog.naver.com/dpsystem/220633371902', target='_blank') 김기사, 알톤스포츠의 여행용 자전거 투어로드, 2016
+
+    .subc
+      .name 생산
+      ul
+        li: a(href='http://www.altonsports.co.kr', target='_blank') http://www.altonsports.co.kr
+        li: a(href='http://surlybikes.com', target='_blank') http://surlybikes.com
+        li: a(href='http://www.jamisbikes.com', target='_blank') http://www.jamisbikes.com
+        li: a(href='http://www.specialized.com/us/en/bikes/adventure/awol', target='_blank') http://www.specialized.com/.../awol
+        li: a(href='http://www.koga.com', target='_blank') http://www.koga.com
+
+    .subc
+      .name 바이클리
+      ul
+        li: a(href='http://bikelymall.co.kr', target='_blank') http://bikelymall.co.kr
+        li: a(href='http://blog.naver.com/bikely_tour', target='_blank') Bikely Tourist
+        li: a(href='http://blog.naver.com/bikely', target='_blank') Bikely
+
+  include _mall.jade

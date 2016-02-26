@@ -24,97 +24,93 @@ block content
           br
 
   .section
-    div 자전거에 관한 모든 카테고리
-    .line-thru 는 희망 사항
+    | 자전거에 관한 모든 카테고리
+    br
+    | <s>는 희망 사항</s>
 
   .category-list
 
-    .group
+    .sub-section
       ul
-        li.name 자전거
-        li: a(href='categories/bike-road-mtb') 로드/산악
-        li: a(href='categories/bike-minivelo') 미니벨로
-        li: a(href='categories/bike-touring') 여행
-        li: a(href='categories/bike-city') 생활
+        li: a(href='/categories/newbie') 자전거에 대해 아무것도 몰라요
+      ul
+        li: a(href='/categories/pain') 아파요
 
-    .group
+    .sub-section
       ul
-        li.name 용품
-        li: a(href='categories/helmet') 헬멧
-        li: a(href='categories/gloves') 장갑
-        li: a(href='categories/goggles') 고글
-        li: a(href='categories/clothing') 의류
-        li: a(href='categories/shoes') 신발/페달
+        li: a(href='/categories/shopping') 쇼핑몰
 
-    .group
+    .sub-section
       ul
-        li.name 필수 악세
-        li: a(href='categories/light') 라이트
-        li: a(href='categories/bottle') 물통
-        li: a(href='categories/saddle-bag') 안장 가방
-        li: a(href='categories/tube') 튜브
-
-    .group
-      ul
-        li.name 필수 도구
-        li: a(href='categories/multi-tool') 멀티툴
-        li: a(href='categories/chain-oil') 체인 오일
-        li: a(href='categories/pump') 펌프
-
-    .group
-      ul
-        li.name 부품
-        li: a(href='categories/saddle') 안장
-        li: a(href='categories/wheel') 휠
-        li: a(href='categories/drive-train') 구동계
-        li: a(href='categories/touring-parts') 여행
-
-    .group
-      ul
-        li.name 서비스
-        li: a(href='categories/maintenance') 정비
-        li: a(href='categories/delivery') 배달
-        li: a(href='categories/rant') 대여
-
-    .group
-      ul
+        li: a(href='/categories/bike-road') 로드
+        li: a(href='/categories/bike-chromoly') 크로몰리
+        li: a(href='/categories/bike-cx') 사이클로
+        li: a(href='/categories/bike-mtb') 엠티비
+        li: a(href='/categories/bike-fat') 팻
+        li: a(href='/categories/bike-touring') 투어링
+        li: a(href='/categories/bike-minivelo') 미니벨로
+        li: a(href='/categories/bike-city') 생활차
+      //- ul
         li.name 커뮤니티
-        li: a(href='categories/people-road') 로드
-        li: a(href='categories/people-mtb') 산악
-        li: a(href='categories/people-minivelo') 미니벨로
-        li: a(href='categories/people-touring') 여행
-
-    .group
+        li: a(href='/categories/people-road') 로드
+        li: a(href='/categories/people-mtb') 산악
+        li: a(href='/categories/people-minivelo') 미니벨로
+        li: a(href='/categories/people-touring') 여행
       ul
-        li.name 행사
-        li: a(href='categories/event-road') 로드
-        li: a(href='categories/event-mtb') 산악
-        li: a(href='categories/news') 뉴스
+        li: a(href='/categories/news') 뉴스
+        li: a(href='/categories/event-road') 로드 행사
+        li: a(href='/categories/event-mtb') 엠티비 행사
 
-    .group
+    .sub-section
       ul
-        li.name 코스
-        li: a(href='categories/course-road') 로드
-        li: a(href='categories/course-mtb') 산악
-        li: a(href='categories/course-cycle-path') 자전거길
-        li: a(href='categories/course-cycle-path') GPX 편집
+        li: a(href='/categories/light') 라이트
+        li: a(href='/categories/bottle') 물통
+        li: a(href='/categories/saddle-bag') 안장 가방
+      ul
+        li: a(href='/categories/tube') 튜브
+        li: a(href='/categories/tube') 타이어
+        li: a(href='/categories/chain-oil') 체인 오일
+      ul
+        li: a(href='/categories/multi-tool') 멀티툴
+        li: a(href='/categories/pump') 펌프
+      ul
+        li: a(href='/categories/drive-train') 구동계
+        li: a(href='/categories/wheel') 휠
+        li: a(href='/categories/saddle') 안장
+        li: a(href='/categories/touring-parts') 투어링 부품
 
-    .group
+    .sub-section
       ul
-        li.name 보급
-        li: a(href='categories/restaurant-seoul') 서울/경기
+        li: a(href='/categories/helmet') 헬멧
+        li: a(href='/categories/goggles') 고글
+        li: a(href='/categories/clothing') 의류
+        li: a(href='/categories/gloves') 장갑
+        li: a(href='/categories/shoes') 신발/페달
 
-    .group
+    .sub-section
       ul
-        li.name 기록
-        li: a(href='categories/garmin') 가민
-        li: a(href='categories/ranking') 스트라바
+        li: a(href='/categories/course-road') 로드 코스
+        li: a(href='/categories/course-mtb') 엠티비 코스
+        li: a(href='/categories/course-cycle-path') 자전거길
+        li: a(href='/categories/tour-korea') 국토종주
+        li: a(href='/categories/course-edit') GPX
+      ul
+        li: a(href='/categories/road-rules') 도로 상식
+        li: a(href='/categories/accident') 사고
 
-    .group
+    .sub-section
       ul
-        li.name 몸
-        li: a(href='categories/fitting') 피팅
-        li: a(href='categories/recovery') 회복
+        li: a(href='/categories/garmin') 가민
+        li: a(href='/categories/tracking') 스트라바
+      ul
+        li: a(href='/categories/fitting') 피팅
+        li: a(href='/categories/recovery') 리커버리
+        li: a(href='/categories/physics') 물리
+
+    .sub-section
+      ul
+        //-li: a(href='/categories/essay') 에세이
+        li: a(href='/categories/legend') 전설
 
   .section
     a(href='https://www.facebook.com/allca.news', target='_blank')

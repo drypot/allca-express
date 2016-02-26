@@ -1,0 +1,37 @@
+extends ../layout/layout
+
+block head-title
+  title 팻바이크 - #{appName}
+
+block content
+
+  .page-title
+    h1 팻바이크
+
+  .category-detail
+    
+    .subc
+      .name 커뮤니티
+      ul
+        li: a(href='http://cafe.naver.com/fatbikes', target='_blank') 팻빠
+
+
+    .subc
+      .name 블로그
+      ul
+        li: a(href='http://blog.naver.com/fatbike', target='_blank') 팻빠의 Fat Bike 이야기
+        li: a(href='http://blog.naver.com/camp345', target='_blank') 캠퍼, Return to nature!
+        li: a(href='', target='_blank')
+        li: a(href='', target='_blank')
+
+    .subc
+      .name TO DO
+      ul
+        li 생산 수입사 추가
+
+    .subc
+      .name 경기 안산
+      ul
+        li: a(href='http://fatbike.cafe24.com', target='_blank') http://fatbike.cafe24.com, 언빌바이크
+
+  include _mall.jade

@@ -17,7 +17,7 @@ expb.core.get('/api/counters/:id/inc', function (req, res, done) {
 expb.core.get('/supp/counters', function (req, res, done) {
   usera.checkAdmin(res, function (err, user) {
     if (err) return done(err);
-    res.render('counter/counter-list');
+    res.render('counter/counter-list.jade');
   });
 });
 

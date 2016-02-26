@@ -16,7 +16,7 @@ expb.core.get('/users/:id([0-9]+)/update', function (req, res, done) {
       if (err) return done(err);
       userb.getCached(id, function (err, tuser) {
         if (err) return done(err);
-        res.render('user/user-update', {
+        res.render('user/user-update.jade', {
           tuser: tuser
         });
       });

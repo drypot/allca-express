@@ -1,0 +1,48 @@
+extends ../layout/layout
+
+block head-title
+  title 크로몰리 - #{appName}
+
+block content
+
+  .page-title
+    h1 크로몰리
+
+  .category-detail
+    
+    .subc
+      .name 커뮤니티
+      ul
+        li: a(href='http://cafe.naver.com/classicvintage', target='_blank') 클랙식 &amp; 빈티지
+
+    .subc
+      .name 공방
+      ul
+        li: a(href='http://www.sweetcycles.co.kr', target='_blank') http://www.sweetcycles.co.kr
+        li: a(href='http://www.dooboogong.com', target='_blank') http://www.dooboogong.com
+        li: a(href='http://www.ditobici.com', target='_blank') http://www.ditobici.com
+
+    .subc
+      .name 해외 공방
+      ul
+        li: a(href='http://www.thevanillaworkshop.com', target='_blank') http://www.thevanillaworkshop.com
+        li: a(href='http://www.festka.com', target='_blank') http://www.festka.com
+        li: a(href='http://www.mapbicycles.com', target='_blank') http://www.mapbicycles.com
+        li: a(href='http://www.feathercycles.com', target='_blank') http://www.feathercycles.com
+        li: a(href='http://fireflybicycles.com', target='_blank') http://fireflybicycles.com
+        li: a(href='http://www.vanhulsteijn.com', target='_blank') http://www.vanhulsteijn.com
+
+    .subc
+      .name 국내 샾
+      ul
+        li: a(href='http://bikelymall.co.kr', target='_blank') http://bikelymall.co.kr
+        li: a(href='http://blog.naver.com/bikely_tour', target='_blank') Bikely Tourist
+        li: a(href='http://blog.naver.com/bikely', target='_blank') Bikely
+
+    .subc
+      .name 해외 샾
+      ul
+        li: a(href='http://bluelug.com', target='_blank') http://bluelug.com
+
+  include _mall.jade
+    

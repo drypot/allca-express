@@ -22,7 +22,7 @@ init.add(function (done) {
 
   if (config.dev) {
     expb.core.get('/test/upload', function (req, res) {
-      res.render('express/express-upload');
+      res.render('express/express-upload.jade');
     });
 
     expb.core.all('/api/test/echo-upload', expu.handler(function (req, res, done) {

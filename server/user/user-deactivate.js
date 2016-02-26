@@ -28,6 +28,6 @@ expb.core.delete('/api/users/:id([0-9]+)', function (req, res, done) {
 expb.core.get('/users/deactivate', function (req, res, done) {
   usera.checkUser(res, function (err, user) {
     if (err) return done(err);
-    res.render('user/user-deactivate');
+    res.render('user/user-deactivate.jade');
   });
 });
