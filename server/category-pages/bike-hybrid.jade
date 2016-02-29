@@ -1,0 +1,28 @@
+extends ../layout/layout
+
+block head-title
+  title 하이브리드 - #{appName}
+
+block content
+
+  .page-title
+    h1 하이브리드
+
+  .depth2
+
+    .depth3.
+      하이브리드는 로드보다 편하고 MTB 보다 빠릅니다.<br>
+      자출이나 생활용으로 가격적인 부담이 적습니다.<br>
+
+    .depth3
+      ul
+        li: a(href='http://www.specialized.com/kr/ko/bikes/multi-use/sirrus', target='_blank') 스페셜라이즈드 시러스
+        li: a(href='http://giant-korea.com/m11.php?p_type=giant&p_cate1=348&p_cate2=352&p_cate3=447', target='_blank') 자이언트 이스케이프
+        li: a(href='http://www.trekbikes.com/kr/ko_KR/자전거/시티-자전거/듀얼-스포츠-자전거/ds-시리즈/c/B431', target='_blank') 트랙 듀얼스포츠
+        li: a(href='http://www.scott-korea.com/products/sub_list.html?c_code=102415', target='_blank') 스캇 서브
+        li: a(href='http://www.odbike.co.kr/shop/goods/goods_list.php?&category=003001', target='_blank') 메리다 하이브리드
+        li: a(href='http://www.samchuly.co.kr', target='_blank') http://www.samchuly.co.kr
+        li: a(href='http://www.altonsports.co.kr', target='_blank') http://www.altonsports.co.kr
+        li: a(href='http://www.smartbike.co.kr', target='_blank') http://www.smartbike.co.kr
+
+  include _mall.jade

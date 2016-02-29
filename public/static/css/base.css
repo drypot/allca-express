@@ -134,7 +134,7 @@ pre.sample {
   padding-left: 8px;
   padding-right: 8px; }
 
-.category-list {
+.depth1 {
   max-width: 640px;
   margin: 4.5em auto;
   /*
@@ -147,20 +147,20 @@ pre.sample {
   }*/
   text-align: center; }
   @media (min-width: 768px) {
-    .category-list {
+    .depth1 {
       margin: 5.1em auto; } }
-  .category-list ul {
+  .depth1 ul {
     padding: 0em; }
-    .category-list ul li {
+    .depth1 ul li {
       display: inline;
       word-break: keep-all;
       margin: 0em 0.3em; }
-    .category-list ul li.name {
+    .depth1 ul li.name {
       font-weight: bold; }
-    .category-list ul li.name::after {
+    .depth1 ul li.name::after {
       content: ":"; }
 
-.category-detail {
+.depth2 {
   max-width: 640px;
   margin: 4.5em auto;
   /*
@@ -173,28 +173,28 @@ pre.sample {
   }*/
   text-align: center; }
   @media (min-width: 768px) {
-    .category-detail {
+    .depth2 {
       margin: 5.1em auto; } }
-  .category-detail .subc {
+  .depth2 .depth3 {
     margin: 3em auto; }
     @media (min-width: 768px) {
-      .category-detail .subc {
+      .depth2 .depth3 {
         margin: 3.3em auto; } }
     @media (min-width: 1024px) {
-      .category-detail .subc {
+      .depth2 .depth3 {
         margin: 3.6em auto; } }
     @media (min-width: 1400px) {
-      .category-detail .subc {
+      .depth2 .depth3 {
         margin: 3.9em auto; } }
-    .category-detail .subc .name {
+    .depth2 .depth3 .name {
       font-size: 1.3em;
       font-weight: bold;
       margin-bottom: 1em; }
-    .category-detail .subc ul {
+    .depth2 .depth3 ul {
       margin-bottom: 1.5em;
       padding: 0em;
       list-style: none; }
-      .category-detail .subc ul li {
+      .depth2 .depth3 ul li {
         margin-bottom: 0.3em; }
 
 #profile-text {

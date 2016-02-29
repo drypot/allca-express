@@ -1,13 +1,20 @@
 extends ../layout/layout
 
 block head-title
-  title 회복 - #{appName}
+  title 리커버리 - #{appName}
 
 block content
 
   .page-title
-    h1 회복
+    h1 리커버리
 
-  .category-detail
+  .depth2
 
+    .depth3
+      .name 파워젤
+      ul
+        li: a(href='http://www.kolonpharm.co.kr', target='_blank') http://www.kolonpharm.co.kr, 코오롱 파워젤
+        li: a(href='http://www.cephas.kr', target='_blank') http://www.cephas.kr, 아미노 바이탈
+      ul
+        li: a(href='http://www.wiggle.co.uk', target='_blank') http://www.wiggle.co.uk
   include _mall.jade

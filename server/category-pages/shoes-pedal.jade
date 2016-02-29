@@ -1,0 +1,50 @@
+extends ../layout/layout
+
+block head-title
+  title 신발 - #{appName}
+
+block content
+
+  .page-title
+    h1 신발
+
+  .depth2
+
+    .depth3
+      .name 가이드
+      ul
+        li: a(href='http://blog.naver.com/akiliner/220455610730', target='_blank') 칫솔, 초보자용 클릿 페달, 2015
+        li: a(href='http://blog.naver.com/akiliner/220283553416', target='_blank') 칫솔, 클릿 입문자 가이드, 2015
+        li: a(href='http://ngpnephilim.blog.me/220604783294', target='_blank') 호윤, 2016 로드바이크 최상급 클릿슈즈 정리
+
+    .depth3
+      .name 신어보고 살 수 있는 곳
+      ul
+        li: a(href='http://www.bikenara.co.kr', target='_blank') http://www.bikenara.co.kr, 합정역, 자이언트, 시마노
+        li: a(href='http://www.kevin.co.kr', target='_blank') http://www.kevin.co.kr, 성내동, 시디
+        
+    .depth3
+      .name 신발
+      ul
+        li: a(href='http://www.nnxsports.com', target='_blank') http://www.nnxsports.com, 시마노
+        li: a(href='http://www.cephas.kr', target='_blank') http://www.cephas.kr, 피직, 본트
+        li: a(href='http://www.cellosports.com', target='_blank') http://www.cellosports.com, 시디
+        li: a(href='http://www.kevin.co.kr', target='_blank') http://www.kevin.co.kr, 시디
+        li: a(href='http://www.hksram.com', target='_blank') http://www.hksram.com, 지로
+        li: a(href='http://odbike.co.kr', target='_blank') http://odbike.co.kr, 노스웨이브
+
+    .depth3
+      .name 클릿 페달 
+      ul
+        li: a(href='http://odbike.co.kr', target='_blank') http://odbike.co.kr, 스피드플래이
+        li: a(href='http://sanbadasports.co.kr', target='_blank') http://sanbadasports.co.kr, 크랭크브라더스
+        li: a(href='http://www.cellosports.com', target='_blank') http://www.cellosports.com, 엑스페도
+        li: a(href='http://www.cometbicycle.com', target='_blank') http://www.cometbicycle.com, 익서스타
+
+    .depth3
+      .name 평 페달
+      ul
+        li: a(href='http://www.jagang.co.kr', target='_blank') http://www.jagang.co.kr, 웰고
+        li: a(href='http://www.imtmall.co.kr', target='_blank') http://www.imtmall.co.kr, 스팽크
+
+  include _mall.jade

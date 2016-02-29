@@ -1,0 +1,22 @@
+extends ../layout/layout
+
+block head-title
+  title 공구 - #{appName}
+
+block content
+
+  .page-title
+    h1 공구
+
+  .depth2
+
+    .depth3
+      .name 제품
+      ul
+        li: a(href='http://www.hlsc.co.kr', target='_blank') http://www.hlsc.co.kr, 토픽
+        li: a(href='http://www.cellosports.com', target='_blank') http://www.cellosports.com, BBB
+        li: a(href='http://www.elfama.com', target='_blank') http://www.elfama.com, Super B
+        li: a(href='http://www.ixenon.co.kr', target='_blank') http://www.ixenon.co.kr, 파크툴
+        li: a(href=' http://www.fours.co.kr', target='_blank')  http://www.fours.co.kr, 아이스툴즈
+        
+  include _mall.jade

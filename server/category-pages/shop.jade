@@ -1,98 +1,49 @@
 extends ../layout/layout
 
 block head-title
-  title 쇼핑몰 - #{appName}
+  title 지역별 샾 - #{appName}
 
 block content
 
   .page-title
-    h1 쇼핑몰
+    h1 지역별 샾
 
-  .category-detail
+  .depth2
     
-    .subc
-      .name 국내
-      ul
-        li: a(href='http://shopping2.naver.com', target='_blank') http://shopping2.naver.com
-        li: a(href='http://shopping.daum.net', target='_blank') http://shopping.daum.net
-        li: a(href='https://www.specializedstore.co.kr', target='_blank') https://www.specializedstore.co.kr
-        li: a(href='http://www.athatb.com', target='_blank') http://www.athatb.com, 길음역
-        li: a(href='http://www.duracle.com', target='_blank') http://www.duracle.com, 언주역
-        li: a(href='http://www.bikenara.co.kr', target='_blank') http://www.bikenara.co.kr, 합정역
-        li: a(href='http://philshop.co.kr', target='_blank') http://philshop.co.kr
-        li: a(href='http://www.femtb.co.kr', target='_blank') http://www.femtb.co.kr
-        li: a(href='http://webikemall.com', target='_blank') http://webikemall.com
-        li: a(href='http://www.agitshop.co.kr', target='_blank') http://www.agitshop.co.kr
-        li: a(href='http://jagudae.com', target='_blank') http://jagudae.com
-        li: a(href='http://cnpbike.com', target='_blank') http://cnpbike.com
-        li: a(href='http://minishop.gmarket.co.kr/troikalee7', target='_blank') 즐거운 자전거 나라
-
-    .subc
-      .name 특수
-      ul
-        li: a(href='http://www.imtmall.co.kr', target='_blank') http://www.imtmall.co.kr, 산악
-        li: a(href='http://bike-spoke.com', target='_blank') http://bike-spoke.com, 스포크
-
-    .subc
-      .name 해외
-      ul
-        li: a(href='http://www.wiggle.co.uk', target='_blank') http://www.wiggle.co.uk
-        li: a(href='http://www.chainreactioncycles.com', target='_blank') http://www.chainreactioncycles.com
-        li: a(href='http://www.probikekit.co.uk', target='_blank') http://www.probikekit.co.uk
-        li: a(href='http://www.probikekit.ca', target='_blank') http://www.probikekit.ca
-        li: a(href='http://www.competitivecyclist.com', target='_blank') http://www.competitivecyclist.com
-        li: a(href='http://www.cyclingexpress.com', target='_blank') http://www.cyclingexpress.com
-        li: a(href='http://www.pushys.com.au', target='_blank') http://www.pushys.com.au
-
-    .subc
-      .name 배송 대행
-      ul
-        li: a(href='http://www.ehanex.com/', target='_blank') http://www.ehanex.com
-        li: a(href='http://www.koalamart.com', target='_blank') http://www.koalamart.com, 호주
-
-    .subc
-      .name 중고
-      ul
-        li: a(href='http://www.bikesell.co.kr', target='_blank') http://www.bikesell.co.kr
-        li: a(href='http://corearoadbike.com/board/?g_id=recycle02', target='_blank') http://corearoadbike.com/.../recycle02
-        li: a(href='http://www.ppomppu.co.kr/zboard/zboard.php?id=market_bike', target='_blank') http://www.ppomppu.co.kr/.../market_bike
-        li: a(href='http://cafe.naver.com/joonggonara', target='_blank') http://cafe.naver.com/joonggonara
-
-    .subc
+    .depth3
       .name 체인점
       ul
         li: a(href='http://www.samchuly.co.kr', target='_blank') http://www.samchuly.co.kr
         li: a(href='http://www.altonsports.co.kr', target='_blank') http://www.altonsports.co.kr
         li: a(href='http://www.bikey.co.kr', target='_blank') http://www.bikey.co.kr
         li: a(href='http://www.biclo.co.kr', target='_blank') http://www.biclo.co.kr
-        li: a(href='http://map.naver.com', target='_blank') http://map.naver.com
 
-    .subc
+    .depth3
       .name 광진구
       ul
         li: a(href='http://fullouter.co.kr', target='_blank') http://fullouter.co.kr, 뚝섬유원지역
         li: a(href='http://godkca.com', target='_blank') http://godkca.com, 뚝섬유원지역
         li: a(href='http://광진omk.kr', target='_blank') http://광진omk.kr, 아차산역
 
-    .subc
+    .depth3
       .name 성동구
       ul
         li: a(href='http://cafe.naver.com/veloday', target='_blank') http://cafe.naver.com/veloday, 왕십리
 
-    .subc
+    .depth3
       .name 동대문구
       ul
         li: a(href='http://www.youjinbike.co.kr', target='_blank') http://www.youjinbike.co.kr, 장안동
         li: a(href='http://philshop.co.kr', target='_blank') http://philshop.co.kr, 장안동
         li: a(href='http://www.femtb.co.kr', target='_blank') http://www.femtb.co.kr, 청량리
 
-    .subc
+    .depth3
       .name 중랑구
       ul
         li: a(href='http://www.bikeland.co.kr', target='_blank') http://www.bikeland.co.kr, 중랑역
         li: a(href='http://www.manitoubike.co.kr', target='_blank') http://www.manitoubike.co.kr, 중랑역
 
-    .subc
+    .depth3
       .name 노원구
       ul
         li: a(href='http://www.qvelo.co.kr', target='_blank') http://www.qvelo.co.kr, 태릉입구역
@@ -100,12 +51,12 @@ block content
         li: a(href='http://cnpbike.com', target='_blank') http://cnpbike.com, 월계역
         li: a(href='http://cafe.naver.com/rosinanteshop', target='_blank') http://cafe.naver.com/rosinanteshop, 태릉입구역
 
-    .subc
+    .depth3
       .name 성북구
       ul
         li: a(href='http://www.athatb.com', target='_blank') http://www.athatb.com, 길음역
 
-    .subc
+    .depth3
       .name 용산구
       ul
         li: a(href='http://bikely.kr', target='_blank') http://bikely.kr, 용산역
@@ -113,7 +64,7 @@ block content
         li: a(href='http://www.routebike.co.kr', target='_blank') http://www.routebike.co.kr, 용산역
         li: a(href='http://bb5.co.kr', target='_blank') http://bb5.co.kr, 반포대교
 
-    .subc
+    .depth3
       .name 마포구
       ul
         li: a(href='http://www.bikenara.co.kr', target='_blank') http://www.bikenara.co.kr, 합정역
@@ -121,26 +72,26 @@ block content
         li: a(href='http://www.peppha.co.kr', target='_blank') http://www.peppha.co.kr, 망원동
         li: a(href='http://blog.naver.com/peppha', target='_blank') http://blog.naver.com/peppha
 
-    .subc
+    .depth3
       .name 은평구
       ul
         li: a(href='http://www.weplay.co.kr/', target='_blank') http://www.weplay.co.kr, 새절역
         li: a(href='http://www.my-bike.co.kr', target='_blank') http://www.my-bike.co.kr, 새절역
 
-    .subc
+    .depth3
       .name 강동구
       ul
         li: a(href='http://www.odvelo.com', target='_blank') http://www.odvelo.com, 성내동
         li: a(href='http://www.kevin.co.kr', target='_blank') http://www.kevin.co.kr, 성내동
         li: a(href='http://www.agitshop.co.kr', target='_blank') http://www.agitshop.co.kr, 성내동
 
-    .subc
+    .depth3
       .name 송파구
       ul
         li: a(href='http://cafe.naver.com/specializedseoulcmb', target='_blank') http://cafe.naver.com/specializedseoulcmb, 잠실
         li: a(href='http://cafe.naver.com/zionbike', target='_blank') http://cafe.naver.com/zionbike, 풍납동
 
-    .subc
+    .depth3
       .name 강남구
       ul
         li: a(href='http://www.shootingb.com', target='_blank') http://www.shootingb.com, 신사동
@@ -150,34 +101,34 @@ block content
         li: a(href='http://blog.naver.com/rodeobike1', target='_blank') http://blog.naver.com/rodeobike1, 압구정동
         li: a(href='http://www.duracle.com', target='_blank') http://www.duracle.com, 언주역
 
-    .subc
+    .depth3
       .name 서초구
       ul
         li: a(href='http://www.biclo.co.kr', target='_blank') http://www.biclo.co.kr, 반포점
         li: a(href='http://awesomegear.co.kr', target='_blank') http://awesomegear.co.kr, 양재동
 
-    .subc
+    .depth3
       .name 동작구
       ul
         li: a(href='http://blog.naver.com/kamandolbike', target='_blank') http://blog.naver.com/kamandolbike, 흑석동 자전거포
 
-    .subc
+    .depth3
       .name 영등포구
       ul
         li: a(href='http://cycloidbike.com', target='_blank') http://cycloidbike.com, 당산역
         li: a(href='http://cafe.naver.com/bicyclemeca', target='_blank') http://cafe.naver.com/bicyclemeca, 영등포역
 
-    .subc
+    .depth3
       .name 구로구
       ul
         li: a(href='http://blog.naver.com/manelloshop', target='_blank') http://blog.naver.com/manelloshop, 구로동
 
-    .subc
+    .depth3
       .name 강서구
       ul
         li: a(href='http://www.bikesports.kr', target='_blank') http://www.bikesports.kr, 화곡동
 
-    .subc
+    .depth3
       .name 경기 성남시
       ul
         li: a(href='http://www.saymtb.com', target='_blank') http://www.saymtb.com
@@ -187,31 +138,26 @@ block content
         li: a(href='http://www.cycleworks.co.kr', target='_blank') http://www.cycleworks.co.kr
         li: a(href='http://rxbike.com', target='_blank') http://rxbike.com
 
-    .subc
+    .depth3
       .name 경기 용인 
       ul
         li: a(href='http://www.yoonsungbike.co.kr', target='_blank') http://www.yoonsungbike.co.kr
 
-    .subc
+    .depth3
       .name 경기 광명 
       ul
         li: a(href='http://www.r4b.co.kr', target='_blank') http://www.r4b.co.kr
 
-    .subc
+    .depth3
       .name 경기 파주
       ul
         li: a(href='http://bicyclecamping.co.kr', target='_blank') http://bicyclecamping.co.kr, 자전거 캠핑
 
-    .subc
+    .depth3
       .name 제주도
       ul
         li: a(href='http://www.jejuproshop.com', target='_blank') http://www.jejuproshop.com
         li: a(href='', target='_blank')
         li: a(href='', target='_blank')
 
-    .subc
-      .name 
-      ul
-        li: a(href='', target='_blank')
-        li: a(href='', target='_blank')
-        li: a(href='', target='_blank')
+ 

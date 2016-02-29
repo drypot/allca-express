@@ -203,7 +203,7 @@ pre.sample {
 
 // category
 
-.category-list {
+.depth1 {
   @include section;
   ul {
     padding: 0em;
@@ -221,9 +221,9 @@ pre.sample {
   }   
 }
 
-.category-detail {
+.depth2 {
   @include section;
-  .subc {
+  .depth3 {
     @include sub-section;
     .name {
       font-size: 1.3em;
