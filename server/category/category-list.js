@@ -11,6 +11,8 @@ var imageb = require('../category/category-base');
 var bannerb = require('../banner/banner-base');
 var categoryl = exports;
 
+var bootdt = new Date();
+
 expb.core.get('/', function (req, res, done) {
   list(req, res, false, done);
 });
@@ -21,10 +23,12 @@ expb.core.get('/api/categories', function (req, res, done) {
 
 function list(req, res, api, done) {
   if (api) {
-    res.json({
+    res.json({ 
+      bootdt: bootdt 
     });
   } else {
     res.render('category/category-list.jade', {
+      bootdt: util2.dateTimeString(bootdt).slice(0, 16)
     });
   }
 }
