@@ -9,12 +9,16 @@ var expb = require('../express/express-base');
 var userb = require('../user/user-base');
 var imageb = require('../category/category-base');
 var bannerb = require('../banner/banner-base');
+var counterb = require('../counter/counter-base');
 var categoryl = exports;
 
 var bootdt = new Date();
 
 expb.core.get('/', function (req, res, done) {
-  list(req, res, false, done);
+  updatePV(function (err) {
+    if (err) return done(err);
+    list(req, res, false, done);
+  });
 });
 
 expb.core.get('/api/categories', function (req, res, done) {
@@ -34,5 +38,12 @@ function list(req, res, api, done) {
 }
 
 expb.core.get('/:name([0-9a-z\-]+)', function (req, res, done) {
-  res.render('category-pages/' + req.params.name + '.jade');
+  updatePV(function (err) {
+    if (err) return done(err);
+    res.render('category-pages/' + req.params.name + '.jade');
+  });
 });
+
+function updatePV(done) {
+  counterb.update('pv', util2.today(), done);
+}

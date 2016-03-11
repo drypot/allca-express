@@ -7,10 +7,6 @@ var expb = require('../express/express-base');
 var usera = require('../user/user-auth');
 var counterb = require('../counter/counter-base');
 
-expb.core.use(function (req, res, done) {
-  counterb.update('pv', util2.today(), done);
-});
-
 expb.core.get('/api/counters/:id/inc', function (req, res, done) {
   counterb.update(req.params.id, util2.today(), function (err) {
     if (err) return done(err);
