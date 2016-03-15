@@ -1,0 +1,37 @@
+extends ../layout/layout
+
+block head-title
+  title 페달 - #{appName}
+
+block content
+
+  .page-title
+    h1 페달
+
+  .depth2
+
+    .depth3
+      .name 평 페달
+      ul
+        li: a(href='http://www.samchuly.co.kr', target='_blank') http://www.samchuly.co.kr
+        li: a(href='http://giant-korea.com', target='_blank') http://giant-korea.com
+      ul
+        li: a(href='http://www.cellosports.com', target='_blank') http://www.cellosports.com, 엑스페도
+        li: a(href='http://www.elfama.com', target='_blank') http://www.elfama.com
+        li: a(href='http://www.jagang.co.kr', target='_blank') http://www.jagang.co.kr, 웰고
+        li: a(href='http://www.imtmall.co.kr', target='_blank') http://www.imtmall.co.kr, 스팽크
+
+    .depth3
+      .name 클릿 페달
+      ul
+        li: a(href='http://www.mavic.kr', target='_blank') http://www.mavic.kr
+
+      ul
+        li: a(href='http://www.nnxsports.com', target='_blank') http://www.nnxsports.com, 시마노
+        li: a(href='http://odbike.co.kr', target='_blank') http://odbike.co.kr, 스피드플래이
+        li: a(href='http://sanbadasports.co.kr', target='_blank') http://sanbadasports.co.kr, 크랭크브라더스
+        li: a(href='http://www.cellosports.com', target='_blank') http://www.cellosports.com, 엑스페도
+        li: a(href='http://www.cometbicycle.com', target='_blank') http://www.cometbicycle.com, 익서스타
+
+
+  include _mall.jade
