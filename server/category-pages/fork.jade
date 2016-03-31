@@ -1,0 +1,27 @@
+extends ../layout/layout
+
+block head-title
+  title 포크 - #{appName}
+
+block content
+
+  .page-title
+    h1 포크
+
+  .depth2
+    .depth3
+      ul
+        li: a(href='http://biketool.tistory.com/42', target='_blank') 자전거공작소, 산악자전거 포크의 명칭과 그에 대한 이해
+        li: a(href='http://biketool.tistory.com/46', target='_blank') 자전거공작소, 샥펌프 사용법
+      ul
+        li: a(href='http://biketool.tistory.com/56', target='_blank') 자전거공작소, 스타너트, 해바라기 설치
+        li: a(href='http://biketool.tistory.com/146', target='_blank') 자전거공작소, 스타너트 제거
+        li: a(href='http://biketool.tistory.com/57', target='_blank') 자전거공작소, 포크의 설치1, 헤드컵 프레싱과 스타너트 설치
+        li: a(href='http://biketool.tistory.com/58', target='_blank') 자전거공작소, 포크의 설치2, 스티어튜브 커팅과 스템 장착
+
+    .depth3
+      ul
+        li: a(href='http://www.ixenon.co.kr', target='_blank') http://www.ixenon.co.kr, 폭스샥
+        li: a(href='http://www.hksram.com', target='_blank') http://www.hksram.com, 락샥
+
+  include _mall.jade
