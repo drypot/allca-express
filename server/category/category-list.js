@@ -37,6 +37,22 @@ function list(req, res, api, done) {
   }
 }
 
+expb.core.get('/shoes', function (req, res, done) {
+  res.redirect(301, '/pedal-shoes');
+});
+
+expb.core.get('/pedal', function (req, res, done) {
+  res.redirect(301, '/pedal-shoes');
+});
+
+expb.core.get('/tools', function (req, res, done) {
+  res.redirect(301, '/maintenance');
+});
+
+// expb.core.get('/', function (req, res, done) {
+//   res.redirect(301, '/');
+// });
+
 expb.core.get('/:name([0-9a-z\-]+)', function (req, res, done) {
   updatePV(function (err) {
     if (err) return done(err);
