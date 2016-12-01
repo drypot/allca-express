@@ -50,7 +50,7 @@ mongodb, redis
 
 실행.
 
-    bin/run allca-live
+    node server/main/main.js -c config/allca-live.json
 
 
 ## 서비스로 등록
@@ -70,7 +70,7 @@ mongodb, redis
     Restart=always
     RestartSec=15
     WorkingDirectory=/data/web/allca
-    ExecStart=/usr/bin/node server/main/main.js --config config/allca-live.json
+    ExecStart=/usr/bin/node server/main/main.js -c config/allca-live.json
     Environment=NODE_ENV=production
 
     [Install]
