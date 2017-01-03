@@ -7,7 +7,7 @@ var userb = require('../user/user-base');
 var usern = exports;
 
 expb.core.get('/users/register', function (req, res, done) {
-  res.render('user/user-new.jade');
+  res.render('user/user-new.pug');
 });
 
 expb.core.post('/api/users', function (req, res, done) {

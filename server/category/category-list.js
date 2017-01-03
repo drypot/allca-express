@@ -31,7 +31,7 @@ function list(req, res, api, done) {
       bootdt: bootdt 
     });
   } else {
-    res.render('category/category-list.jade', {
+    res.render('category/category-list.pug', {
       bootdt: util2.dateTimeString(bootdt).slice(0, 16)
     });
   }
@@ -56,7 +56,7 @@ expb.core.get('/tools', function (req, res, done) {
 expb.core.get('/:name([0-9a-z\-]+)', function (req, res, done) {
   updatePV(function (err) {
     if (err) return done(err);
-    res.render('category-pages/' + req.params.name + '.jade');
+    res.render('category-pages/' + req.params.name + '.pug');
   });
 });
 

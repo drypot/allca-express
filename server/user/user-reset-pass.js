@@ -20,7 +20,7 @@ init.add(function (done) {
 });
 
 expb.core.get('/users/reset-pass', function (req, res, done) {
-  res.render('user/user-reset-pass.jade');
+  res.render('user/user-reset-pass.pug');
 });
 
 expb.core.post('/api/reset-pass', function (req, res, done) {

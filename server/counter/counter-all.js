@@ -17,7 +17,7 @@ expb.core.get('/api/counters/:id/inc', function (req, res, done) {
 expb.core.get('/supp/counters', function (req, res, done) {
   usera.checkAdmin(res, function (err, user) {
     if (err) return done(err);
-    res.render('counter/counter-list.jade');
+    res.render('counter/counter-list.pug');
   });
 });
 
@@ -38,7 +38,7 @@ expb.core.get('/supp/counters/:id', function (req, res, done) {
         let counter = counters[i];
         counter.dStr = util2.dateString(counter.d);
       }
-      res.render('counter/counter-view.jade', { counters: counters })
+      res.render('counter/counter-view.pug', { counters: counters })
     });
 });
 

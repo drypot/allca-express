@@ -1,0 +1,20 @@
+extends ../layout/layout
+
+block head-title
+  title 자물쇠 - #{appName}
+
+block content
+
+  .page-title
+    h1 자물쇠
+
+  .depth2
+
+    .depth3
+      //.name 수입
+      ul
+        li: a(href='http://www.samchuly.co.kr', target='_blank') http://www.samchuly.co.kr
+        li: a(href='http://giant-korea.com', target='_blank') http://giant-korea.com
+        li: a(href='http://www.kevin.co.kr', target='_blank') http://www.kevin.co.kr
+
+  include _mall.pug

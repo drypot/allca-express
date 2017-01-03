@@ -1,0 +1,24 @@
+extends ../layout/layout
+
+block head-title
+  title 트레이너 - #{appName}
+
+block content
+
+  .page-title
+    h1 트레이너
+
+  .depth2
+
+    .depth3
+      //.name 수입
+      ul
+        li: a(href='http://giant-korea.com', target='_blank') http://giant-korea.com
+        li: a(href='http://www.nnxsports.com', target='_blank') http://www.nnxsports.com, 키커
+        li: a(href='http://www.hlsc.co.kr', target='_blank') http://www.hlsc.co.kr, 사이클옵스
+        li: a(href='http://www.kevin.co.kr', target='_blank') http://www.kevin.co.kr, 미노우라
+        li: a(href='http://www.cellosports.com', target='_blank') http://www.cellosports.com, 엘리트
+        li: a(href='http://www.elfama.com', target='_blank') http://www.elfama.com, 엘리트
+        li: a(href='http://www.kevin.co.kr', target='_blank') http://www.kevin.co.kr, 미노우라
+
+  include _mall.pug

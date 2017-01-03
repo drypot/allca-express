@@ -1,0 +1,20 @@
+extends ../layout/layout
+
+block head-title
+  title  - #{appName}
+
+block content
+
+  .page-title
+    h1 
+
+  .depth2
+
+    .depth3
+      .name 
+      ul
+        li: a(href='', target='_blank')
+        li: a(href='', target='_blank')
+        li: a(href='', target='_blank')
+
+  include _mall.pug

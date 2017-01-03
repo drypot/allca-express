@@ -10,7 +10,7 @@ var bannerb = require('../banner/banner-base');
 expb.core.get('/supp/banners', function (req, res, done) {
   usera.checkAdmin(res, function (err, user) {
     if (err) return done(err);
-    res.render('banner/banner-update.jade', {
+    res.render('banner/banner-update.pug', {
       banners: bannerb.banners
     });
   });

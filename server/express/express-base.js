@@ -26,10 +26,9 @@ init.add(function (done) {
   expb.app.locals.appNamel = config.appNamel;
   expb.app.locals.appDesc = config.appDesc;
 
-  expb.app.engine('jade', require('jade').renderFile);
   expb.app.set('views', 'server');
   // 페이지 확장자는 명시적으로 적어주는 것이 좋은 듯. 여러 엔진 쓸 경우도 그렇고.
-  // expb.app.set('view engine', 'jade');
+  // expb.app.set('view engine', 'pug');
 
   expb.app.use(cookieParser());
   expb.app.use(session({ 
@@ -140,7 +139,7 @@ init.add(function (done) {
     if (res.locals.api) {
       res.json({ err: err });
     } else {
-      res.render('express/express-error.jade', { err: err });
+      res.render('express/express-error.pug', { err: err });
     }
   });
 
