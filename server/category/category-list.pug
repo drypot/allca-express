@@ -3,18 +3,12 @@ extends ../layout/layout
 block head-title
   title #{appName}
 
-block page-header
-
 block content
 
   script.
     $(function() {
       //ccategory.initList();
     });
-
-  .page-title
-    h1
-      a(href='/') #{appName}
 
   //-
     .section
@@ -24,91 +18,81 @@ block content
           br
 
   .section
-    | <s>개미지옥에 오신 것을 환영합니다.</s>
-    br
-    br
-    | 업데이트: !{bootdt}
+    .text
+      | <s>개미지옥에 오신 것을 환영합니다.</s>
+      br
+      | 업데이트: !{bootdt}
 
-  .depth1
+  .list-at-home
 
     .sub-section
       ul
         li: a(href='/bike') 자전거
-      ul
         li: a(href='/frame') 프레임
         li: a(href='/fork') 포크
-      ul
+        li: a(href='/handlebar') 핸들바
         li: a(href='/seat-post') 싯포스트
         li: a(href='/saddle') 안장
-      ul
-        li: a(href='/handlebar') 핸들바
-        li: a(href='/light') 라이트
-        li: a(href='/computer') 컴퓨터
-      ul
-        li: a(href='/wheel') 휠
-        li: a(href='/tire-tube') 타이어/튜브
-        li: a(href='/pump') 펌프
       ul
         li: a(href='/drive-train') 구동계
         li: a(href='/chain') 체인
         li: a(href='/break') 브레이크
       ul
+        li: a(href='/wheel') 휠
+        li: a(href='/tire-tube') 타이어/튜브
+        li: a(href='/pump') 펌프
+      ul
+        li: a(href='/light') 라이트
+        li: a(href='/computer') 컴퓨터
         li: a(href='/bottle-cage') 물통 케이지
-      ul
         li: a(href='/tool-case') 공구통/멀티툴
-      ul
-        li: a(href='/fender') 펜더
-        li: a(href='/kick-stand') 킥스텐드
         li: a(href='/lock') 자물쇠
       ul
         li: a(href='/bag') 가방/짐받이
+        li: a(href='/fender') 펜더
+        li: a(href='/kick-stand') 킥스텐드
       ul
         li: a(href='/trainer') 트레이너
         li: a(href='/stand') 거치대
       ul
-        li: a(href='/maintenance') 정비/공구
+        li: a(href='/tools') 공구/정비
 
     .sub-section
       ul
         li: a(href='/clothing') 의류
-      ul
-        li: a(href='/helmet-goggle') 헬멧/고글
-      ul
-        li: a(href='/pedal-shoes') 페달/신발
-      ul
+        li: a(href='/helmet') 헬멧
+        li: a(href='/goggle') 고글
+        li: a(href='/pedal') 페달
+        li: a(href='/shoes') 신발
         li: a(href='/cosmetics') 화장품
 
     .sub-section
       ul
         li: a(href='/shop') 지역별 샾
-      ul
         li: a(href='/rental-transport') 대여/운반
 
     .sub-section
       ul
+        li: a(href='/riding') 라이딩
         li: a(href='/course') 코스
-      ul
         li: a(href='/course-tool') 코스 도구
-      ul
         li: a(href='/gran-fondo') 그란 폰도
         li: a(href='/randonneurs') 란도너스
       ul
-        li: a(href='/riding') 라이딩
-      ul
-        li: a(href='/fitting') 자세/피팅
+        li: a(href='/fitting') 피팅/자세
         li: a(href='/recovery') 리커버리
         li: a(href='/pain') 통증
 
     .sub-section
       ul
         li: a(href='/community') 커뮤니티
+        li: a(href='/movies') 라이딩 영상들
+        li: a(href='/legend') 전설
       ul
         //-li: a(href='/essay') 에세이
         //-li: a(href='/physics') 물리
-        li: a(href='/movies') 라이딩 영상들
-      ul
-        li: a(href='/legend') 전설
 
-  .section
-    a(href='https://www.facebook.com/allca.news', target='_blank')
-      span.fa.fa-facebook-square.fa-2x
+    ul
+      li 
+        a(href='https://www.facebook.com/allca.news', target='_blank')
+          span.fa.fa-facebook-square.fa-2x

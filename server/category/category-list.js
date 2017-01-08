@@ -37,16 +37,16 @@ function list(req, res, api, done) {
   }
 }
 
-expb.core.get('/shoes', function (req, res, done) {
-  res.redirect(301, '/pedal-shoes');
+expb.core.get('/pedal-shoes', function (req, res, done) {
+  res.redirect(301, '/pedal');
 });
 
-expb.core.get('/pedal', function (req, res, done) {
-  res.redirect(301, '/pedal-shoes');
+expb.core.get('/maintenance', function (req, res, done) {
+  res.redirect(301, '/tools');
 });
 
-expb.core.get('/tools', function (req, res, done) {
-  res.redirect(301, '/maintenance');
+expb.core.get('/helmet-goggle', function (req, res, done) {
+  res.redirect(301, '/helmet');
 });
 
 // expb.core.get('/', function (req, res, done) {

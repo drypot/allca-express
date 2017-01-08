@@ -67,7 +67,7 @@ body {
   /*@include wide {
     margin: $margin * 2.1 auto;
   }*/
-  text-align: center;
+  text-align: left;
 }
 
 .section {
@@ -95,6 +95,10 @@ body {
   margin: $margin * 0.8 auto;
 }
 
+.text {
+  padding: 0em 0.5rem;
+}
+
 pre.clean {
   margin: $margin auto;
   padding: 0px;
@@ -106,6 +110,7 @@ pre.clean {
 hr {
   margin: 0px;
 }
+
 
 // error
 
@@ -159,10 +164,12 @@ pre.sample {
   //border-top: 0px;
   .about-list {
     margin: 0.3em auto;
+    padding: 0em 0.5rem;
     ul {
       margin: 0px;
       li {
-        padding: 0 5px;
+        padding: 0rem;
+        padding-right: 0.8rem;
       }
     }
   }
@@ -174,6 +181,7 @@ pre.sample {
 
 .page-header-site-name {
   margin: 0.6em auto;
+  padding: 0em 0.5rem;
   font-size: 1.3em;
   a:hover {
     text-decoration: none;
@@ -188,6 +196,7 @@ pre.sample {
   }
   h1 {
     font-size: 2.5em;
+    padding: 0em 0.5rem;
   }
 }
 
@@ -203,14 +212,15 @@ pre.sample {
 
 // category
 
-.depth1 {
+.list-at-home {
   @include section;
+  padding: 0em 0.5rem;
   ul {
     padding: 0em;
     li {
       display: inline;
       word-break: keep-all;
-      margin: 0em 0.3em;
+      margin: 0em 0.6em 0em 0em;
     }
     li.name {
       font-weight: bold; 
@@ -221,9 +231,10 @@ pre.sample {
   }   
 }
 
-.depth2 {
+.list-at-pages {
   @include section;
-  .depth3 {
+  padding: 0em 0.5rem;
+  .group {
     @include sub-section;
     .name {
       font-size: 1.3em;

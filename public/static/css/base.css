@@ -27,7 +27,7 @@ body {
   /*@include wide {
     margin: $margin * 2.1 auto;
   }*/
-  text-align: center; }
+  text-align: left; }
   @media (min-width: 768px) {
     .section {
       margin: 5.1em auto; } }
@@ -46,6 +46,9 @@ body {
 
 .mini-section {
   margin: 2.4em auto; }
+
+.text {
+  padding: 0em 0.5rem; }
 
 pre.clean {
   margin: 3em auto;
@@ -93,17 +96,20 @@ pre.sample {
   .page-footer a {
     color: #333333; }
   .page-footer .about-list {
-    margin: 0.3em auto; }
+    margin: 0.3em auto;
+    padding: 0em 0.5rem; }
     .page-footer .about-list ul {
       margin: 0px; }
       .page-footer .about-list ul li {
-        padding: 0 5px; }
+        padding: 0rem;
+        padding-right: 0.8rem; }
   .page-footer .sponsor {
     margin: 0.6em auto;
     font-size: 1.1em; }
 
 .page-header-site-name {
   margin: 0.6em auto;
+  padding: 0em 0.5rem;
   font-size: 1.3em; }
   .page-header-site-name a:hover {
     text-decoration: none; }
@@ -119,7 +125,7 @@ pre.sample {
   /*@include wide {
     margin: $margin * 2.1 auto;
   }*/
-  text-align: center; }
+  text-align: left; }
   @media (min-width: 768px) {
     .page-title {
       margin: 5.1em auto; } }
@@ -128,13 +134,14 @@ pre.sample {
   .page-title a:hover {
     text-decoration: none; }
   .page-title h1 {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    padding: 0em 0.5rem; }
 
 .top-links a {
   padding-left: 8px;
   padding-right: 8px; }
 
-.depth1 {
+.list-at-home {
   max-width: 640px;
   margin: 4.5em auto;
   /*
@@ -145,22 +152,23 @@ pre.sample {
   /*@include wide {
     margin: $margin * 2.1 auto;
   }*/
-  text-align: center; }
+  text-align: left;
+  padding: 0em 0.5rem; }
   @media (min-width: 768px) {
-    .depth1 {
+    .list-at-home {
       margin: 5.1em auto; } }
-  .depth1 ul {
+  .list-at-home ul {
     padding: 0em; }
-    .depth1 ul li {
+    .list-at-home ul li {
       display: inline;
       word-break: keep-all;
-      margin: 0em 0.3em; }
-    .depth1 ul li.name {
+      margin: 0em 0.6em 0em 0em; }
+    .list-at-home ul li.name {
       font-weight: bold; }
-    .depth1 ul li.name::after {
+    .list-at-home ul li.name::after {
       content: ":"; }
 
-.depth2 {
+.list-at-pages {
   max-width: 640px;
   margin: 4.5em auto;
   /*
@@ -171,30 +179,31 @@ pre.sample {
   /*@include wide {
     margin: $margin * 2.1 auto;
   }*/
-  text-align: center; }
+  text-align: left;
+  padding: 0em 0.5rem; }
   @media (min-width: 768px) {
-    .depth2 {
+    .list-at-pages {
       margin: 5.1em auto; } }
-  .depth2 .depth3 {
+  .list-at-pages .group {
     margin: 3em auto; }
     @media (min-width: 768px) {
-      .depth2 .depth3 {
+      .list-at-pages .group {
         margin: 3.3em auto; } }
     @media (min-width: 1024px) {
-      .depth2 .depth3 {
+      .list-at-pages .group {
         margin: 3.6em auto; } }
     @media (min-width: 1400px) {
-      .depth2 .depth3 {
+      .list-at-pages .group {
         margin: 3.9em auto; } }
-    .depth2 .depth3 .name {
+    .list-at-pages .group .name {
       font-size: 1.3em;
       font-weight: bold;
       margin-bottom: 1em; }
-    .depth2 .depth3 ul {
+    .list-at-pages .group ul {
       margin-bottom: 1.5em;
       padding: 0em;
       list-style: none; }
-      .depth2 .depth3 ul li {
+      .list-at-pages .group ul li {
         margin-bottom: 0.3em; }
 
 #profile-text {
