@@ -58,7 +58,7 @@ mongodb, redis
 /usr/lib/systemd 디렉토리는 패키지의 유닛 파일들만 들어간다.
 사용자 추가 유닛들은 /etc/systemd/system 에 생성.
 
-    /etc/systemd/system/allca.serivce
+    /etc/systemd/system/allca.service
 
     [Unit]
     Description=AllCa
