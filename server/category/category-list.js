@@ -12,7 +12,7 @@ var bannerb = require('../banner/banner-base');
 var counterb = require('../counter/counter-base');
 var categoryl = exports;
 
-var bootdt = new Date();
+//var bootdt = new Date();
 
 expb.core.get('/', function (req, res, done) {
   updatePV(function (err) {
@@ -28,11 +28,11 @@ expb.core.get('/api/categories', function (req, res, done) {
 function list(req, res, api, done) {
   if (api) {
     res.json({ 
-      bootdt: bootdt 
+      //bootdt: bootdt 
     });
   } else {
     res.render('category/category-list.pug', {
-      bootdt: util2.dateTimeString(bootdt).slice(0, 16)
+      //bootdt: util2.dateTimeString(bootdt).slice(0, 16)
     });
   }
 }
