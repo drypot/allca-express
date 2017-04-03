@@ -1,16 +1,16 @@
 extends ../layout/layout
 
 block head-title
-  title 액션 카메라 - #{appName}
+  title 카메라 - #{appName}
 
 block content
 
   .page-title
-    h1 액션 카메라
+    h1 카메라
 
   .list-at-pages
-
     .group
+      .name 액션 카메라
       ul
         li: a(href='http://www.spocam.co.kr', target='_blank') http://www.spocam.co.kr, 고프로
         li: a(href='https://ko.gopro.com', target='_blank') https://ko.gopro.com
@@ -20,13 +20,16 @@ block content
       ul
         li: a(href='http://www.sony.co.kr/', target='_blank') http://www.sony.co.kr
 
-    .group
       ul
         li: a(href='https://ko.aliexpress.com', target='_blank') https://ko.aliexpress.com
 
-    .group
       ul
         li: a(href='http://blog.naver.com/antillia/220638679989', target='_blank') IDEAL, 가성비는 이 녀석, NOVATEK SJ9000 4K
         li: a(href='http://blog.naver.com/tobemusic/220910077036', target='_blank') 포유, 미친 가성비 Warrior G1S 자전거 블랙박스 액션캠 도착!!
+
+    .group
+      .name 드론
+      ul
+        li: a(href='http://www.dji.com/kr', target='_blank') http://www.dji.com/kr
 
   include _mall.pug
